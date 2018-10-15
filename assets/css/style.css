@@ -1,0 +1,13 @@
+body {
+background: black;
+color: white;
+font-family: 'Abril Fatface', cursive;
+text-align: right;
+}
+
+h1, h2{
+  font-size: 30px;
+}
+p {
+font-size: 20px;
+}
