@@ -43,7 +43,7 @@ $("document").ready(function() {
   // prompt for user to enter in
   var response = window.prompt(questions[i].prompt);
 
-  if (response == questions[i].answer){
+  if (response == questions[i].html){
     score++;
     alert("nice job!");
   } else {
@@ -51,6 +51,32 @@ $("document").ready(function() {
     }
     alert("you got " + score + "/" + questions.length);
     
-$("#trivia").append(response);
-    
+$("#trivia").append(response).html;
+
+function timeOut(){
+
+setTimeout(fiveSeconds, 1000 * 5);
+setTimeout(tenSeconds, 1000 * 10);
+setTimeout(timeUp, 1000 * 15);
+
+function fiveSeconds() {
+  // console log 10 seconds left
+  $("#time-left").append("<h2>About 10 Seconds Left!</h2>");
+  console.log("10 seconds left");
+}
+
+function tenSeconds() {
+  // console log 5 seconds left
+  $("#time-left").append("<h2>About 5 Seconds Left!</h2>");
+  console.log("5 seconds left");
+}
+
+function timeUp() {
+  // console log done
+  console.log("done");
+  $("#time-left").append("<h2>Time's Up!</h2>");
+  console.log("time is up");
+}
+timout();
+}
   });
