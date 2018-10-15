@@ -49,21 +49,8 @@ $("document").ready(function() {
   } else {
       alert("wrong");
     }
-
     alert("you got " + score + "/" + questions.length);
     
+$("#trivia").append(response);
     
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   });
