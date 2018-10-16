@@ -41,7 +41,85 @@ function stop() {
 // execute the funtion by run()
 run();
 
+// END TIMER function
 
+// TRIVIA QUESTIONS
+
+var myQuestions = [
+  {
+    question: "This tool helps bartenders create the perfect pour every time.",
+    answers: {
+      a: "mister",
+      b: "snifter",
+      c: "jigger"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Thich term describes a drink served at room temperature, with no ice or chilling?",
+    answers: {
+      a: "neat",
+      b: "stright up",
+      c: "on the rocks"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "om Cruise showed off his bartending skills in this classic 1988 film.",
+    answers: {
+      a: "Risky Business",
+      b: "Stand By Me",
+      c: "Cocktail"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "These cocktail additives, made from herbs and roots, are used to make both a Manhattan and the classic martini.",
+    answers: {
+      a: "sours",
+      b: "bitters",
+      c: "sugars"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "How can you estimate the proof of a liquor?",
+    answers: {
+      a: "double the alcohol by volume",
+      b: "half the alcohol by volume",
+      c: "add 50 to the alcohol by volume"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "Which of the following is NOT typically found in an Old Fashioned?",
+    answers: {
+      a: "vermouth",
+      b: "bitters",
+      c: "sugar"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "Which two ingredients make up a martini?\n(a) vodka and bitters?",
+    answers: {
+      a: "gin and tonic",
+      b: "gin and vermouth",
+      c: "vodka and bitters"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What two ingredients make up the Shirley Temple?",
+    answers: {
+      a: "ginger ale and grenadine",
+      b: "cola and simple syrup",
+      c: "orange juice and seltzer water"
+    },
+    correctAnswer: "a"
+  },
+
+]
 
 
 
@@ -49,9 +127,9 @@ run();
 
 
   // variable references to html elements
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+  var quizContainer = document.getElementById('quiz');
+  var resultsContainer = document.getElementById('results');
+  var submitButton = document.getElementById('submit');
 
 
 
@@ -61,11 +139,11 @@ run();
 
 
   function barQuiz() {
-    const output = [];
+    var output = [];
 
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
-        const answers = [];
+        var answers = [];
 
         for (letter in currentQuestion.answers) {
           answers.push()
